@@ -5,7 +5,13 @@ testButton.addEventListener("click", function() {
     let randomNumber = Math.floor(Math.random() * 100); // Generates a random number between 0 and 99
 
     console.log("Random Number: " + randomNumber);
-
+    if(randomNumber < 30){
+        result.innerHTML = "The number is less than 30.";
+    } else if(randomNumber > 30 && randomNumber < 69){
+        result.innerHTML = "The number is between 30 and 69.";
+    } else if(randomNumber >= 70){
+        result.innerHTML = "The number is 70 or greater.";
+    }
 
     // CODE SOLO
     // - When the button is clicked, a random number between 0 and 99 is generated. 
